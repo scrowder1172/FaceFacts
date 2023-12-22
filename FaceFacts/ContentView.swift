@@ -10,10 +10,12 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @Environment(\.modelContext) var modelContext
+    @State private var path = [Person]()
     @Query var people: [Person]
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             List {
                 ForEach(people) {person in
                     NavigationLink(value: person) {
@@ -23,9 +25,18 @@ struct ContentView: View {
             }
             .navigationTitle("FaceFacts")
             .navigationDestination(for: Person.self) { person in
-                Text(person.name)
+                EditPersonView(person: person)
+            }
+            .toolbar {
+                Button("Add person", systemImage: "plus", action: addPerson)
             }
         }
+    }
+    
+    func addPerson() {
+        let person: Person = Person(name: "", emailAddress: "", details: "")
+        modelContext.insert(person)
+        path.append(person)
     }
 }
 
