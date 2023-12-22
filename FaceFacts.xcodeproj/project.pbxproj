@@ -12,6 +12,7 @@
 		522334CE2B35F91400672C76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522334CD2B35F91400672C76 /* Assets.xcassets */; };
 		522334D12B35F91400672C76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522334D02B35F91400672C76 /* Preview Assets.xcassets */; };
 		522334D82B35FA0000672C76 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522334D72B35FA0000672C76 /* Person.swift */; };
+		522334DA2B35FCCC00672C76 /* EditPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522334D92B35FCCC00672C76 /* EditPersonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		522334CD2B35F91400672C76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		522334D02B35F91400672C76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		522334D72B35FA0000672C76 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		522334D92B35FCCC00672C76 /* EditPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPersonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				522334CB2B35F91300672C76 /* ContentView.swift */,
 				522334CD2B35F91400672C76 /* Assets.xcassets */,
 				522334D72B35FA0000672C76 /* Person.swift */,
+				522334D92B35FCCC00672C76 /* EditPersonView.swift */,
 				522334CF2B35F91400672C76 /* Preview Content */,
 			);
 			path = FaceFacts;
@@ -143,6 +146,7 @@
 				522334D82B35FA0000672C76 /* Person.swift in Sources */,
 				522334CC2B35F91300672C76 /* ContentView.swift in Sources */,
 				522334CA2B35F91300672C76 /* FaceFactsApp.swift in Sources */,
+				522334DA2B35FCCC00672C76 /* EditPersonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
