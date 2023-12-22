@@ -24,6 +24,20 @@ struct PeopleView: View {
         }
     }
     
+    init(searchString: String = "") {
+        _people = Query(
+            filter: #Predicate { person in
+                if searchString == "" {
+                    true
+                } else {
+                    person.name.localizedStandardContains(searchString) ||
+                    person.emailAddress.localizedStandardContains(searchString) ||
+                    person.details.localizedStandardContains(searchString)
+                }
+            }
+        )
+    }
+    
     func deletePeople(at offsets: IndexSet) {
         for offset in offsets {
             let person = people[offset]
